@@ -16,6 +16,8 @@ body {
     font-weight: 700;
     background-color: #22b2f0;
     color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .header h1 {
@@ -45,6 +47,8 @@ body {
     font-family: "Comic Neue", cursive;
     font-weight: 700;
     font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .header nav ul {
@@ -63,17 +67,29 @@ a {
 
 p {
     font-size: 24px;
+    color: #ffffff;
 }
 
 .hero {
     height: 600px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/Bung.JPG"), url("../images/ocean.jpg");
-    background-position: 7% 50% ,center;
-    background-size: 20% ,cover;
-    background-repeat: no-repeat, repeat;
+    background-image: url("../images/ocean.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat: repeat;
     border-radius: 50%, 0%;
+
+}
+
+.Bung {
+    padding: 60px;
+    width: 350px;
+    height: 446px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20%;
 
 }
 
@@ -96,8 +112,6 @@ p {
 .benefits {
     margin-right: 20px;
     padding: 20px;
-    clear: both;
-    float: right;
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -105,35 +119,47 @@ p {
 }
 
 .aside-section {
-    margin-bottom: 32px;
     font-family: "Comic Neue", cursive;
     font-weight: 700;
     line-height: 250%;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .aside-section a{
     font-size: 24px;
     text-decoration: underline;
 }
-.aside-section img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
 
 .content-section {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
     font-family: "Comic Neue", cursive;
     font-weight: 400;
-    background-color: #2589bd;
-    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.content-section img {
-    max-height: 200px;
+.horiseon {
+    padding: 60px;
+    width: 350px;
+    height: 446px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.placeholder {
+    padding: 60px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10%;
 }
 
 .footer {
@@ -152,4 +178,20 @@ p {
     margin-top: 40px;
     font-size: 40px;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    header, nav, content {
+        flex-direction: column;
+    }
+    
+    .benefits {
+        order: 0;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    content {
+        order: 1;
+    }
 }
