@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(#466182, #0b0f14);
+}
+
+.header {
+    padding: 20px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    background-color: #22b2f0;
+    color: #ffffff;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header h1 .seo {
+    color: #d9dcd6;
+}
+
+.content-section h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.aside-section h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 48px;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 24px;
+}
+
+.hero {
+    height: 600px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/Bung.JPG"), url("../images/ocean.jpg");
+    background-position: 7% 50% ,center;
+    background-size: 20% ,cover;
+    background-repeat: no-repeat, repeat;
+    border-radius: 50%, 0%;
+
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+.aside-section {
+    margin-bottom: 32px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    line-height: 250%;
+    color: #ffffff;
+}
+
+.aside-section a{
+    font-size: 24px;
+    text-decoration: underline;
+}
+.aside-section img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.content-section {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    background-color: #2589bd;
+    color: #ffffff;
+}
+
+.content-section img {
+    max-height: 200px;
+}
+
+.footer {
+    padding: 30px;
+    height: 400px;
+    clear: both;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    text-align: center;
+    background-image: url("../images/bigfinsquid.jpg");
+    background-position: 0% 20%;
+    color: #ffffff;
+}
+
+.footer a{
+    margin-top: 40px;
+    font-size: 40px;
+    text-decoration: underline;
+}
